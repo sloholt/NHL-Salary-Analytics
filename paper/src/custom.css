@@ -1,0 +1,182 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:ital,wght@0,400;0,600;0,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&display=swap");
+
+/* Body background and base text styling */
+body {
+  background-color: #f7fafc;
+  font-family: "Georgia", serif;
+  color: #1a202c;
+  margin: 0.5;
+  padding: 0;
+}
+
+/* Top nav bar */
+header {
+  background-color: #002244;
+  font-family: "Georgia", serif;
+  color: #f7fafc;
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+h1 {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #b22222;
+}
+.author-block {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-top: -10px;
+  margin-bottom: 5px;
+  font-family: "Georgia", serif;
+}
+
+.subheading {
+  margin-top: 0;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-align: left;
+  color: #2d3748;
+  font-family: "Georgia", serif;
+}
+.red-line {
+  border: none;
+  height: 1px;
+  background-color: #b22222;
+  width: 100%;
+  margin: 1rem auto;
+}
+.abstract {
+  font-size: 1rem;
+  color: #2d3748;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+h2,
+h3,
+h4 {
+  color: #002244;
+  font-size: 1.5rem;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+h5 {
+  color: #b22222;
+  font-family: "Georgia", serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+p {
+  font-family: "Georgia", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2d3748;
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+/* Code blocks */
+pre,
+code {
+  background-color: #f7fafc;
+  color: #002244;
+  padding: 0.5em;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, Menlo, monospace;
+  font-size: 0.95rem;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #f7fafc;
+  margin: 1.5rem 0;
+}
+th,
+td {
+  border: 1px solid #a8d8ff;
+  padding: 0.75rem;
+  text-align: left;
+}
+th {
+  background-color: #a8d8ff;
+  color: #002244;
+}
+
+/* Optional markdown images or figures */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+/* Flex container inside nav */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+/* Title styling */
+.title {
+  font-size: 2.2rem;
+}
+
+/* Wraps right-side button(s) */
+.nav-button-wrapper {
+  display: flex;
+  align-items: center;
+}
+mjx-container[display="false"] {
+  font-size: 20% !important;
+}
+/*Centering the figure captions*/
+.figure > p.caption {
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 1px;
+}
+@media print {
+  body {
+    background-color: white !important;
+  }
+  table,
+  th,
+  td,
+  pre,
+  code {
+    background-color: white !important;
+  }
+  header {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: none !important;
+  }
+  a {
+    color: black !important;
+    text-decoration: none !important;
+  }
+}
