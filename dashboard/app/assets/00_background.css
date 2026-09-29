@@ -1,0 +1,57 @@
+/* Fill the viewport for the background layer */
+html,
+body,
+#_dash-app-content,
+#react-entry-point {
+  height: 100%;
+  margin: 0;
+}
+
+/* Ice image as the page background */
+body::before {
+  content: "";
+  position: fixed; /* stays put while scrolling */
+  inset: 0;
+  z-index: -1;
+
+  /* the image + subtle tints/vignette to match the look */
+  background: radial-gradient(
+      120% 90% at 50% -10%,
+      rgba(255, 255, 255, 0.45),
+      rgba(255, 255, 255, 0) 60%
+    ),
+    radial-gradient(
+      120% 120% at 50% 120%,
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0) 45%
+    ),
+    url("/assets/rink1.png");
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-repeat: no-repeat;
+
+  /* gentle punch so it feels icy but not too busy */
+  filter: saturate(1.05) contrast(1.05);
+}
+
+/* Optional: make content readable on top of the ice */
+.page-container {
+  padding: 20px;
+}
+
+.plot-container,
+.cta-box,
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(2px);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 14px;
+}
+
+/* Plotly: let the background show through the figure area */
+.js-plotly-plot,
+.dash-graph,
+.dash-graph .graph {
+  background: transparent !important;
+}
