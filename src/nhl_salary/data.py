@@ -1,6 +1,7 @@
 import re
 import unicodedata
 from pathlib import Path
+import sys
 
 import numpy as np
 import pandas as pd
@@ -54,6 +55,7 @@ PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
 
 SMALL_SAMPLE_MIN = 200  # flag players with < 200 total minutes
 LAGS = (1, 2, 3)
+FIRST_SEASON = 2014
 
 # Fix MoneyPuck outdated formatting
 TEAM_MAP = {"L.A": "LAK", "N.J": "NJD", "S.J": "SJS", "T.B": "TBL", "WSH": "WAS"}
